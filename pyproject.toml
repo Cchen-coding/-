@@ -1,0 +1,16 @@
+[project]
+name = "thu-bdc2026-weekly-strategy"
+version = "0.1.0"
+description = "Configurable weekly top-5 stock selection strategy for HS300-style OHLCV data."
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.23",
+  "pandas>=1.5",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["code", "."]
